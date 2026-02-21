@@ -42,7 +42,7 @@ export const chathtml = `
 
 // ws = new WebSocket('ws://' + location.host + '/ws?u=' + encodeURIComponent(me))
 
-    ws = new WebSocket('ws://' + 'bunserver-hono-l4tdaq-8970ec-170-75-162-158.traefik.me' + '/ws?u=' + encodeURIComponent(me))
+    ws = new WebSocket('wss://' + 'bunserver-hono-l4tdaq-8970ec-170-75-162-158.traefik.me' + '/ws?u=' + encodeURIComponent(me))
 
     ws.onmessage = ({ data }) => {
       const { user, text, sys } = JSON.parse(data)
